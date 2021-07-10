@@ -1,0 +1,37 @@
+This Script will help you automate exporting a AMI to a S3 Bucket you created in create_AMI.sh
+ This proccess will take some time so make sure your info is entered correctly
+----------------------------------------------------------------------------------------------------------
+Enter image id, Example: ami-12ab34cd56ef78ghxyz
+ami-0e6901b5bbc6dc983
+Enter S3 Bucket name w/o s3://
+abcd-ami-import-export-images
+S3 Bucket Prefix typically: exports/ (/) not needed
+exports
+{
+    "DiskImageFormat": "VMDK",
+    "ExportImageTaskId": "export-ami-070c714ff20d3b443",
+    "ImageId": "ami-0e6901b5bbc6dc983",
+    "Progress": "0",
+    "S3ExportLocation": {
+        "S3Bucket": "acct-ami-import-export-images",
+        "S3Prefix": "exports/"
+    },
+    "Status": "active",
+    "StatusMessage": "validating"
+}
+----------------------------------------------------------------------------------------------------------
+
+[cloudshell-user@ip-10-0-38-13 AWS_export_AMI]$ aws ec2 describe-export-image-tasks --export-image-task-id export-ami-070c714ff20d3b443
+{
+    "ExportImageTasks": [
+        {
+            "ExportImageTaskId": "export-ami-070c714ff20d3b443",
+            "S3ExportLocation": {
+                "S3Bucket": "abcd-ami-import-export-images",
+                "S3Prefix": "exports/"
+            },
+            "Status": "completed",
+            "Tags": []
+        }
+    ]
+}
