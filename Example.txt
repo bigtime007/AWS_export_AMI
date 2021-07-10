@@ -16,7 +16,7 @@ All done!
     "Reservations": [.....................................
         
 
-
+[cloudshell-user@ip-10-0-38-13 AWS_export_AMI]$ bash export_AMI.sh 
 This Script will help you automate exporting a AMI to a S3 Bucket you created in create_AMI.sh
  This proccess will take some time so make sure your info is entered correctly
 ----------------------------------------------------------------------------------------------------------
