@@ -14,3 +14,6 @@ aws ec2 enable-ebs-encryption-by-default
 
 To check the status of your export...
 aws ec2 describe-export-image-tasks --export-image-task-id export-ami-id
+example: 
+"ExportImageTaskId": "export-ami-070d724wf00d3b441"
+aws ec2 describe-export-image-tasks --export-image-task-id export-ami-070d724wf00d3b441
