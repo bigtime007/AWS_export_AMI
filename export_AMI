@@ -3,7 +3,7 @@ echo "--------------------------------------------------------------------------
 echo "This Script will help you automate exporting a AMI to a S3 Bucket you created in create_AMI.sh"
 echo " This proccess will take some time so make sure your info is entered correctly"
 echo "----------------------------------------------------------------------------------------------------------"
-echo "Enter image id, Example: ami-12ab34cd56ef78ghxyz
+echo "Enter image id, Example: ami-12ab34cd56ef78ghxyz"
 read AMI_ID
 echo "Enter S3 Bucket name w/o s3://"
 read S3_BUCKET
