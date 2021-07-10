@@ -29,3 +29,10 @@ aws ec2 create-image \
     --instance-id $EC2_ID \
     --name "wg-server" \
     --description "AWS WireGuard Image"
+echo "Make Copy AMI ID before exiting screen (y) to exit or locate in AWS Console"
+read c
+typeset -l n 
+if [[ $c = y ]]
+then
+echo "All done, Run: bash export_AMI.sh"
+fi
