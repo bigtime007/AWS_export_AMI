@@ -54,3 +54,7 @@ exports
         }
     ]
 }
+
+
+Image example:
+https://acct-ami-import-export-images.s3.us-east-2.amazonaws.com/exports/export-ami-070c714ff20d3b443.vmdk
