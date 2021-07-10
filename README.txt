@@ -11,3 +11,6 @@ aws ec2 disable-ebs-encryption-by-default
 Should be the output.
 If you need to enable then again then...
 aws ec2 enable-ebs-encryption-by-default
+
+To check the status of your export...
+aws ec2 describe-export-image-tasks --export-image-task-id export-ami-id
