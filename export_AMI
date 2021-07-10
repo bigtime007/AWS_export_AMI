@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "----------------------------------------------------------------------------------------------------------"
+echo "This Script will help you automate exporting a AMI to a S3 Bucket you created in create_AMI.sh"
+echo " This proccess will take some time so make sure your info is entered correctly"
+echo "----------------------------------------------------------------------------------------------------------"
+aws ec2 decribe
+aws ec2 export-image --image-id ami-083d422baf9b6fc02 --disk-image-format VMDK --s3-export-location S3Bucket=acct-ami-import-export-images/,S3Prefix=export-bucket/
