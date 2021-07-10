@@ -1,3 +1,22 @@
+[cloudshell-user@ip-10-0-38-13 AWS_export_AMI]$ bash create_AMI.sh 
+----------------------------------------------------------------------------------------------------------
+Do You Need a S3 Bucket to Export the AMI (y/n):
+n
+No Bucket Added
+----------------------------------------------------------------------------------------------------------
+Add These Settings to Your export S3 Bucket
+Edit access control list (ACL) add access to other AWS accounts
+Grantee: c4d8eabf8db69dbe46bfe0e517100c554f01200b104d59cd408e777ba442a322
+Objects: List, Write | Bucket: ACL Read, Write
+Enter (y) when done. Any other key will abort the script
+y
+All done!
+----------------------------------------------------------------------------------------------------------
+{
+    "Reservations": [.....................................
+        
+
+
 This Script will help you automate exporting a AMI to a S3 Bucket you created in create_AMI.sh
  This proccess will take some time so make sure your info is entered correctly
 ----------------------------------------------------------------------------------------------------------
